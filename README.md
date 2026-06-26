@@ -1,80 +1,113 @@
-# iOSApp3 – Toronto Venue Explorer
+# iOSApp3 – Toronto Art Explorer
 
 ## Overview
 
-iOSApp3 is a SwiftUI application that allows users to explore popular Toronto landmarks. Users can browse a list of venues and view detailed information about each location, including images, addresses, and descriptions.
+Toronto Art Explorer is a SwiftUI application that allows users to explore Toronto's famous museums and landmarks while viewing artwork from the Metropolitan Museum of Art (MET) API. Users can browse local venues, view detailed information about each location, discover artwork from a live web service, and access additional learning resources.
+
+---
 
 ## Features
 
-* Browse Toronto venues
-* View venue details
-* Display venue images
-* Show venue addresses
-* Read venue descriptions
-* Navigation between screens using NavigationStack
+* Browse popular Toronto venues
+* View detailed information for each venue
+* Display custom venue images
+* Navigate between multiple screens using NavigationStack
+* Explore live artwork from the MET Museum API
+* Load artwork images using AsyncImage
+* Open external learning resources
+* Custom dark museum-inspired user interface
+* Responsive SwiftUI layout
 
-## Tech Stack
+---
+
+## Technologies Used
 
 * Swift
 * SwiftUI
 * Xcode
 * NavigationStack
 * NavigationLink
+* Async/Await
+* URLSession
+* JSONDecoder
+* AsyncImage
 * List
 * VStack
-* Image Views
 * SF Symbols
+* MET Museum Collection API
 
-## Architecture
+---
 
-### Model
+## Project Structure
+
+### Models
 
 * Venue.swift
+* Artwork.swift
 
 ### Views
 
 * ContentView.swift
+* HomeView.swift
 * VenueListView.swift
 * VenueDetailView.swift
+* ArtworkListView.swift
+* ArtworkDetailView.swift
+* LearningResourcesView.swift
 
-## Venues Included
+### Services
 
-### AGO
+* APIService.swift
 
-Art Gallery of Ontario
+---
 
-### ROM
+## Toronto Venues
 
-Royal Ontario Museum
+### Art Gallery of Ontario (AGO)
+
+* 317 Dundas Street West
+* One of Canada's largest art museums.
+
+### Royal Ontario Museum (ROM)
+
+* 100 Queens Park
+* Museum featuring art, culture, and natural history.
 
 ### Casa Loma
 
-Historic Toronto Castle
+* 1 Austin Terrace
+* Historic castle and museum in Toronto.
+
+---
 
 ## Learning Objectives
 
 This project demonstrates:
 
-* Creating custom data models
-* Building Lists in SwiftUI
+* Building multi-screen SwiftUI applications
+* Creating reusable SwiftUI views
 * Passing data between views
-* Navigation using NavigationStack
-* Displaying images and text
-* Building multi-screen applications
+* Using NavigationStack and NavigationLink
+* Consuming a live REST API
+* Decoding JSON using Codable
+* Loading remote images with AsyncImage
+* Using async/await networking
+* Creating a custom themed user interface
+* Writing organized and well-commented Swift code
 
-## Screenshots
+---
 
-### Venue List
+## API
 
-(Add screenshot)
+This project uses the Metropolitan Museum of Art Collection API.
 
-### Venue Detail
+Artwork is downloaded in real time and displayed inside the Artwork Explorer section of the application.
 
-(Add screenshot)
+---
 
 ## Author
 
-Matt Comer
+**Matt Comer**
 
 Mobile Web & App Development
 
